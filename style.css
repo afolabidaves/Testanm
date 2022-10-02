@@ -161,7 +161,7 @@ nav-brand span {
 
 .mobile-links-content ul {
   list-style: none;
-  background-color: tomato;
+  background-color: var(--main-color);
 }
 
 .mobile-links-content a {
@@ -233,15 +233,42 @@ nav-brand span {
   border: 2px solid var(--main-color);
   padding: 10px 20px;
   border-radius: 20px;
+  animation: ripple 2s linear infinite;
+}
+
+
+.btn-s:before,
+.btn-s:after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  animation: inherit;
+  animation-delay: 1.5s;
+}
+
+.btn-s:after {
+  animation-delay: 1.5s;
+}
+
+
+@keyframes btn-s {
+  0% {
+    box-shadow: 0 0 0 .7rem white;
+  }
+  100% {
+    box-shadow: 0 0 0 2rem white;
+  }
+  
 }
 
 .btn-s:hover{
-  background: var(--white-color);
-  color: var(--main-color);
+  background: transparent;
+  color: whitesmoke;
   border-radius: 40px;
   transition: all ease 1s;
   padding: 10px 25px;
-  border: 2px dashed #64485c;
+  border: 1px dashed #64485c;
+
 }
 
 .mobile-botton-2 {
@@ -292,16 +319,44 @@ nav-brand span {
   border: 2px solid var(--main-color);
   padding: 10px 20px;
   border-radius: 20px;
+
+  
 }
 
 .boton:hover{
-  background: transparent;
+  background-color: #adadad;
   color: var(--white-color);
   border: 2px dashed whitesmoke;
   padding: 10px 25px;
   transition: all 1.3s ease;
+
+  animation: ripple 2s linear infinite;
+  
 }
 
+.boton:hover:before,
+.boton:hover:after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  animation: inherit;
+  animation-delay: 1.5s;
+}
+
+.boton:hover:after {
+  animation-delay: 1.5s;
+}
+
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 .7rem rgba(12, 11, 11, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 2rem rgba(24, 22, 22, 0);
+  }
+
+}
 .food-card-item {
   width: 320px;
   border-radius: 10px;
