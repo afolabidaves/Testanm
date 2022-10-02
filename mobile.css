@@ -1,0 +1,92 @@
+@media screen and (max-width:1100px) {
+
+    /* ====header banner section starts here==== */
+    .nav-desktop{
+        display: none;       
+    }.nav-mobile{
+        display: flex;
+    }
+    /* ====header banner section ends here==== */
+    .header-banner-section{
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    /* ====header banner section starts here==== */
+
+    .banner-content-container{
+        padding-top: 25px;
+    }
+
+    .banner-text-container{
+        width: 100%;
+    }
+    /* ====header banner section ends here==== */
+
+
+    /* ====header ABOUT US section STARTS here==== */
+    
+    .about-us-container {
+        justify-content: center;
+    }
+    .about-us-cards-img {
+        min-width: 350px;
+        height: 285px;
+    }
+    .about-us-cards-text {
+        width: 90%;
+        margin: 20px 0;
+    }
+    /* ====header ABOUT US section ends here==== */
+    .food-card-item{
+        margin: 20px 0;
+    }
+
+
+    .explore-food-section {
+        border-left: none;
+        border-right: none;
+    }
+
+
+
+    .explore-con{
+        padding: 8px 15px;
+    }
+
+    .card-con-hol{
+        padding: 10px 0 50px 0;
+    }
+/* <!-- Footer section starts here --> */
+
+footer{
+    flex-direction: column;
+    display: flex;
+}
+
+.footer-icon-container{
+    /* margin: 10px 0; */
+}
+
+footer p{
+    text-align: center;
+}
+/* <!-- Footer section starts here --> */
+
+
+
+}
+/* 
+@media screen and (max-width:1100px) and (min-width:850px){
+    /* ====Explore food section ends here==== */
+    
+    /* .food-card-item{
+        margin: 20px 0;
+    }
+    .food-card-container{
+        flex-direction: column;
+        align-items: center;
+    } */
+    /* ====Explore food section ends here==== */
+
+/* } */
