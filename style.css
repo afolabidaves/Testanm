@@ -19,7 +19,7 @@ html {
 }
 
 main {
-  background: url(./img/3185113.jpg);
+  background: url(./img/dark-monochrome.jpg);
 }
 
 header {
@@ -239,7 +239,7 @@ nav-brand span {
   background: var(--white-color);
   color: var(--main-color);
   border-radius: 40px;
-  transition: all ease-in-out 1s;
+  transition: all ease 1s;
   padding: 10px 25px;
   border: 2px dashed #64485c;
 }
@@ -297,9 +297,9 @@ nav-brand span {
 .boton:hover{
   background: transparent;
   color: var(--white-color);
-  border: 2px dashed blanchedalmond;
+  border: 2px dashed whitesmoke;
   padding: 10px 25px;
-  transition: all ease 1s;
+  transition: all 1.3s ease;
 }
 
 .food-card-item {
@@ -333,7 +333,7 @@ nav-brand span {
   display: flex;
   justify-content: space-between;
   padding: 40px 20px 20px 25px;
-  background-color: #5d5c61;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .explore-con h2{
@@ -349,7 +349,7 @@ footer {
   justify-content: space-between;
   display: flex;
   color: var(--white-color);
-  background: url(./img/3185113.jpg);
+  background: url(./img/dark-monochrome.jpg);
   background-size: cover;
 }
 
