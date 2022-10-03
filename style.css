@@ -233,32 +233,6 @@ nav-brand span {
   border: 2px solid var(--main-color);
   padding: 10px 20px;
   border-radius: 20px;
-  animation: ripple 2s linear infinite;
-}
-
-
-.btn-s:before,
-.btn-s:after {
-  content: "";
-  grid-area: 1/1;
-  border-radius: 50%;
-  animation: inherit;
-  animation-delay: 1.5s;
-}
-
-.btn-s:after {
-  animation-delay: 1.5s;
-}
-
-
-@keyframes btn-s {
-  0% {
-    box-shadow: 0 0 0 .7rem white;
-  }
-  100% {
-    box-shadow: 0 0 0 2rem white;
-  }
-  
 }
 
 .btn-s:hover{
@@ -269,7 +243,33 @@ nav-brand span {
   padding: 10px 25px;
   border: 1px dashed #64485c;
 
+  animation: ripple 2s linear infinite;
 }
+
+.btn-s:hover:before,
+.btn-s:hover:after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  animation: inherit;
+  animation-delay: 1.5s;
+}
+
+.btn-s:hover:after {
+  animation-delay: 1.5s;
+}
+
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 .7rem rgb(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0.3);
+  }
+}
+
+
 
 .mobile-botton-2 {
   margin: 0 0 0 10px;
@@ -325,8 +325,8 @@ nav-brand span {
 
 .boton:hover{
   background-color: #adadad;
-  color: var(--white-color);
-  border: 2px dashed whitesmoke;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1.5px dashed whitesmoke;
   padding: 10px 25px;
   transition: all 1.3s ease;
 
@@ -350,10 +350,10 @@ nav-brand span {
 
 @keyframes ripple {
   0% {
-    box-shadow: 0 0 0 .7rem rgba(12, 11, 11, 0.2);
+    box-shadow: 0 0 0 .7rem rgb(255, 255, 255, 0.2);
   }
   100% {
-    box-shadow: 0 0 0 2rem rgba(24, 22, 22, 0);
+    box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0.4);
   }
 
 }
